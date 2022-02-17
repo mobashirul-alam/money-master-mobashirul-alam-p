@@ -2,7 +2,17 @@
 function getInputValue(inputId) {
     const inputString = document.getElementById(inputId).value;
     const inputValue = parseFloat(inputString);
-    return inputValue;
+    if (inputValue < 0) {
+        alert('Invalid Input Given');
+        document.getElementById(inputId).value = '';
+    } else if (typeof (inputString) != 'number') {
+        alert('Invalid Input Type');
+        document.getElementById(inputId).value = '';
+    }
+    else {
+        return inputValue;
+    }
+
 }
 document.getElementById('calculate-btn').addEventListener('click', function () {
     const incomeInput = getInputValue('income-input');
