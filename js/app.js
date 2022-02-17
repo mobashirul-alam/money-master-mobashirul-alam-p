@@ -1,5 +1,5 @@
 
-// -------------------------Getting Input Value Function------------------------
+// -----------------------Getting Input Value Function----------------------
 function getInputValue(inputId) {
     const inputString = document.getElementById(inputId).value;
     const inputValue = parseFloat(inputString);
@@ -15,7 +15,7 @@ function getInputValue(inputId) {
     }
 }
 
-// ------------------------Calculate button event handler------------------------
+// ---------------------Calculate button event handler----------------------
 
 document.getElementById('calculate-btn').addEventListener('click', function () {
     const incomeInput = getInputValue('income-input');
@@ -35,7 +35,7 @@ document.getElementById('calculate-btn').addEventListener('click', function () {
     }
 })
 
-// --------------------------Save button event handler--------------------------
+// ------------------------Save button event handler------------------------
 
 document.getElementById('save-button').addEventListener('click', function () {
     // Saving Amount calculate.
