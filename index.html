@@ -27,13 +27,13 @@
                     </div>
                 </div>
                 <div class="col-12 col-md-6 text-center pt-4 style-div-2">
-                    <h5 class="fw-bolder fs-4">Income</h5>
+                    <h5 class="fw-bolder fs-4 mb-4">Income</h5>
                     <div class="row g-3">
                         <div class="col-5 text-end">
                             <p class="fw-bold">Income: </p>
                         </div>
                         <div class="col-7 text-start">
-                            <input type="text">
+                            <input id="income-input" type="text">
                         </div>
                     </div>
                     <h5 class="fw-bolder fs-4 pt-3">Expenses</h5>
@@ -42,7 +42,7 @@
                             <p class="fw-bold">Food: </p>
                         </div>
                         <div class="col-7 text-start">
-                            <input type="text">
+                            <input id="food-input" type="text">
                         </div>
                     </div>
                     <div class="row g-3 pt-3">
@@ -50,7 +50,7 @@
                             <p class="fw-bold">Rent: </p>
                         </div>
                         <div class="col-7 text-start">
-                            <input type="text">
+                            <input id="rent-input" type="text">
                         </div>
                     </div>
                     <div class="row g-3 py-3">
@@ -58,12 +58,12 @@
                             <p class="fw-bold">Clothes: </p>
                         </div>
                         <div class="col-7 text-start">
-                            <input type="text">
+                            <input id="clothes-input" type="text">
                         </div>
                     </div>
-                    <button type="button" class="btn btn-primary px-5">Calculate</button>
-                    <h5 class="fw-bolder pt-3">Total Expenses: <span>5500</span></h5>
-                    <h5 class="fw-bolder pt-3">Balance: <span>4500</span></h5>
+                    <button id="calculate-btn" type="button" class="btn btn-primary px-5">Calculate</button>
+                    <h5 class="fw-bolder pt-3">Total Expenses: <span id="total-expense-value">5500</span></h5>
+                    <h5 class="fw-bolder pt-3">Balance: <span id="balance-current">4500</span></h5>
                     <div class="row g-3 pt-3">
                         <div class="col-3 col-md-3 text-end">
                             <p class="fw-bold">Save: </p>
