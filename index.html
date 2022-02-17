@@ -23,7 +23,7 @@
             <div class="row g-5">
                 <div class="col-12 col-md-6">
                     <div>
-                        <img class="img-fluid w-100 " src="./images/calc.png" alt="">
+                        <img class="img-fluid" src="./images/calc.png" alt="">
                     </div>
                 </div>
                 <div class="col-12 col-md-6 text-center pt-4 style-div-2">
@@ -69,17 +69,17 @@
                             <p class="fw-bold">Save: </p>
                         </div>
                         <div class="col-6 col-md-4 text-start">
-                            <input type="text">
+                            <input id="save-input" type="text">
                         </div>
                         <div class="col-2 text-center p-0">
                             <h5>%</h5>
                         </div>
                         <div class="col-12 col-md-3 text-center ps-0">
-                            <button type="button" class="btn btn-primary px-4 py-1">Save</button>
+                            <button id="save-button" type="button" class="btn btn-primary px-4 py-1">Save</button>
                         </div>
                     </div>
-                    <h5 class="fw-bolder pt-3">Saving Amount: <span>00</span></h5>
-                    <h5 class="fw-bolder pt-3">Remaining Balance: <span>00</span></h5>
+                    <h5 class="fw-bolder pt-3">Saving Amount: <span id="saving-amount">00</span></h5>
+                    <h5 class="fw-bolder pt-3">Remaining Balance: <span id="balance-remaining">00</span></h5>
                 </div>
             </div>
         </section>
