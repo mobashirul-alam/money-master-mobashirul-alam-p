@@ -5,14 +5,13 @@ function getInputValue(inputId) {
     if (inputValue < 0) {
         alert('Invalid Input Given');
         document.getElementById(inputId).value = '';
-    } else if (typeof (inputString) != 'number') {
-        alert('Invalid Input Type');
+    } else if (isNaN(inputValue)) {
+        alert('Input Type Invalid');
         document.getElementById(inputId).value = '';
     }
     else {
         return inputValue;
     }
-
 }
 document.getElementById('calculate-btn').addEventListener('click', function () {
     const incomeInput = getInputValue('income-input');
